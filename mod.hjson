@@ -11,7 +11,7 @@ author: "wshon"
 main: "toolkit.ToolkitMod"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A Mindustry toolkit."
 
 #the mod version
 version: 1.0
