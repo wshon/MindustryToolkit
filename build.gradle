@@ -15,21 +15,25 @@ repositories{
 
 ext{
     //the build number that this mod is made for
-    mindustryVersion = 'v131'
+    mindustryVersion = 'v135.2'
     jabelVersion = "0.7.0"
     sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
+    output = System.getenv("AppData") + "/mindustry/mods"
 }
 
 //java 8 backwards compatibility flag
 allprojects{
     tasks.withType(JavaCompile){
+        options.encoding = 'UTF-8'
         options.compilerArgs.addAll(['--release', '8'])
     }
 }
 
 dependencies{
-    compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
-    compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
+//    compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
+//    compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
+    compileOnly "com.github.Anuken.Arc:arc-core:dfcb21ce56"
+    compileOnly 'com.github.Anuken.MindustryJitpack:core:0fa26b1b0f'
 
     //you may uncomment this dependency to properly use Java 17 features while still targeting Java 8.
     //note that this fails on some systems for as-of-yet unknown reasons - if this happens to you, revert the changes

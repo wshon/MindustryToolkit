@@ -1,14 +1,14 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Toolkit V7"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "toolkit"
 
 #your name
-author: "You"
+author: "wshon"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "toolkit.ToolkitMod"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template."
@@ -17,7 +17,9 @@ description: "A Mindustry Java mod template."
 version: 1.0
 
 #the minimum game build required to run this mod
-minGameVersion: 129
+minGameVersion: 136
 
 #this is a java mod
 java: true
+
+hidden: true
